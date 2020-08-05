@@ -7,11 +7,11 @@
 
     input[8:0] rand_num,
 
-    input rand_drive,
+    input rand_drive,//???????
 
-    output reg[9:0]rand_x,
+    output reg[11:0]rand_x,
 
-    output reg[9:0]rand_y
+    output reg[11:0]rand_y
 
     );
 
@@ -24,15 +24,15 @@
 
             begin
 
-                rand_x <= 10'd300;
+                rand_x <= 12'd300;
 
-                rand_y <= 10'd300;
+                rand_y <= 12'd300;
 
                 flag <= 1'b0;
 
             end
 
-        else if(rand_drive) 
+        else if(rand_drive) //???????
                 
                 begin flag <= 1'b1; 
        
@@ -40,7 +40,7 @@
 
                 end
 
-        else if(flag == 1'b1) 
+        else if(flag == 1'b1) //??flag?????????????????????
 
                 begin  rand_y <= rand_num; 
 

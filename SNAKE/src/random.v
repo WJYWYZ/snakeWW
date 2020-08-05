@@ -7,7 +7,7 @@ module random(
 
     input load,
 
-    input[8:0] seed,
+    input[11:0] seed,
 
     output reg[8:0] rand_num
 
@@ -18,7 +18,7 @@ always@(posedge clk or negedge rst_n)
 
     if(!rst_n)  
 
-       rand_num <= 9'b0;
+       rand_num <= 9'd132;
 
      else if(load) 
 
@@ -26,7 +26,7 @@ always@(posedge clk or negedge rst_n)
 
      else if(load) 
 
-              rand_num <= 9'b0;
+              rand_num <= 9'd131;
 
     else 
 

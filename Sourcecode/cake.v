@@ -7,17 +7,17 @@ module cake(
 
     input drive,
 
-    output wire[9:0]box_x,
+    output wire[11:0]box_x,
 
-    output wire[9:0]box_y
+    output wire[11:0]box_y
 
     );
 
     //两个例化模块
 
     wire [8:0]rand_num;
-    wire [9:0]rand_x;
-    wire [9:0]rand_y;
+    wire [11:0]rand_x;
+    wire [11:0]rand_y;
     wire rand_drive,load;
 	 wire [8:0]seed;
 
@@ -31,7 +31,7 @@ module cake(
 
             .load(load),
 
-            .rand_num(rand_num)//一共需要生成两个随机数在cake_create模块调用两次 
+            .rand_num(rand_num)//�?共需要生成两个随机数在cake_create模块调用两次 
 
             );
 
@@ -56,7 +56,7 @@ module cake(
 
                     );
 
-      assign box_x = rand_x;//随机数坐标对应蛋糕坐标
+      assign box_x = rand_x;//随机数坐标对应蛋糕坐�?
 
       assign box_y = rand_y;
 

@@ -17,34 +17,44 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7s15ftgb196-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir c:/vivado/tmp_edit_project.cache/wt [current_project]
-set_property parent.project_path c:/vivado/tmp_edit_project.xpr [current_project]
+set_property webtalk.parent_dir C:/VIVADO/tmp_edit_project.cache/wt [current_project]
+set_property parent.project_path C:/VIVADO/tmp_edit_project.xpr [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths {{c:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP}} [current_project]
+set_property ip_repo_paths {
+  {c:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP}
+  {c:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP}
+} [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/vivado/tmp_edit_project.cache/ip [current_project]
+set_property ip_output_repo c:/VIVADO/tmp_edit_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library "" {
-  c:/VIVADO/src/VGA.v
-  c:/VIVADO/src/cake.v
-  c:/VIVADO/src/cake_create.v
-  c:/VIVADO/src/game_control.v
-  c:/VIVADO/src/random.v
-  c:/VIVADO/src/snake_control.v
-  c:/VIVADO/src/snake.v
+  C:/VIVADO/src/VGA.v
+  C:/VIVADO/src/cake.v
+  C:/VIVADO/src/cake_create.v
+  C:/VIVADO/src/game_control.v
+  C:/VIVADO/src/random.v
+  C:/VIVADO/src/snake_control.v
+  C:/VIVADO/src/snake.v
 }
-read_ip -quiet c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
-set_property used_in_implementation false [get_files -all c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc]
-set_property used_in_implementation false [get_files -all c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
+read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci
+
+read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc]
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc]
+
+read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,9 +64,11 @@ set_property used_in_implementation false [get_files -all c:/vivado/tmp_edit_pro
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc c:/VIVADO/src/constraint.xdc
-set_property used_in_implementation false [get_files c:/VIVADO/src/constraint.xdc]
+read_xdc C:/VIVADO/src/constraint.xdc
+set_property used_in_implementation false [get_files C:/VIVADO/src/constraint.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

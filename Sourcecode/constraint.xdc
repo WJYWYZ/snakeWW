@@ -7,9 +7,9 @@ create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports { c
 #rst_n
 set_property -dict {PACKAGE_PIN D14 IOSTANDARD LVCMOS33} [get_ports { rst_n }];
 #button
-set_property -dict {PACKAGE_PIN C3 IOSTANDARD LVCMOS33} [get_ports { k_up }];
-set_property -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports { k_down }];
-set_property -dict {PACKAGE_PIN M1 IOSTANDARD LVCMOS33} [get_ports { k_right }];
+set_property -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports { k_up }];
+set_property -dict {PACKAGE_PIN C3 IOSTANDARD LVCMOS33} [get_ports { k_down }];
+set_property -dict {PACKAGE_PIN K3 IOSTANDARD LVCMOS33} [get_ports { k_right }];
 set_property -dict {PACKAGE_PIN M2 IOSTANDARD LVCMOS33} [get_ports { k_left }];
 #led
 set_property -dict {PACKAGE_PIN A13 IOSTANDARD LVCMOS33} [get_ports { led }];
@@ -24,6 +24,6 @@ set_property -dict { PACKAGE_PIN C1   IOSTANDARD TMDS_33  } [get_ports { TMDS_Tx
 set_property -dict { PACKAGE_PIN D1   IOSTANDARD TMDS_33  } [get_ports { TMDS_Tx_Data_P[2] }]; #IO_L14P_T2_AD4P_SRCC_35 Sch=hdmi_tx_d_p[2]
 
 
-set_property CONFIG_VOLTAGE 3.3 [current_design];
-set_property CFGBVS VCCO [current_design];
-set_property BITSTREAM CONFIG CONFIGRATE [current_design];
+#set_property CONFIG_VOLTAGE 3.3 [current_design];
+#set_property CFGBVS VCCO [current_design];
+#set_property BITSTREAM CONFIG CONFIGRATE [current_design];

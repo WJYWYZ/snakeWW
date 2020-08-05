@@ -1,0 +1,1614 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Aug  4 14:57:48 2020
+# Process ID: 11180
+# Current directory: C:/VIVADO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16556 C:\VIVADO\tmp_edit_project.xpr
+# Log file: C:/VIVADO/vivado.log
+# Journal file: C:/VIVADO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/VIVADO/tmp_edit_project.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 800.926 ; gain = 175.000
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz_0 -dir c:/VIVADO/tmp_edit_project.srcs/sources_1/ip
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {33} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {33} CONFIG.CLKOUT1_JITTER {352.369} CONFIG.CLKOUT1_PHASE_ERROR {261.747}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.676 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = a5a82432c0ae3632; cache size = 0.522 MB.
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci'
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near ",". [C:/VIVADO/src/VGA.v:13]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+[Tue Aug  4 15:41:28 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1026.285 ; gain = 0.891
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:43:47 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1028.414 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:45:26 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:48:07 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:55:31 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:56:54 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 15:58:52 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:00:03 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.930 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Tue Aug  4 16:03:38 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:06:08 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Tue Aug  4 16:06:08 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:09:01 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1861.793 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1861.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1861.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1956.207 ; gain = 704.277
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {60.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {42} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14} CONFIG.CLKOUT1_JITTER {313.062} CONFIG.CLKOUT1_PHASE_ERROR {310.955}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.004 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Tue Aug  4 16:26:28 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:29:06 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Tue Aug  4 16:29:07 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.004 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = 80092d21f3b1a158; cache size = 0.637 MB.
+catch { [ delete_ip_run [get_ips -all clk_wiz_0] ] }
+INFO: [Project 1-386] Moving file 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci'
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:34:24 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Tue Aug  4 16:34:24 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 16:37:57 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {17} CONFIG.MMCM_CLKOUT0_DIVIDE_F {17} CONFIG.CLKOUT1_JITTER {203.457} CONFIG.CLKOUT1_PHASE_ERROR {155.540}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2000.004 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Tue Aug  4 17:13:52 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 17:15:11 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Tue Aug  4 17:15:11 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2024.938 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = 80092d21f3b1a158; cache size = 0.694 MB.
+catch { [ delete_ip_run [get_ips -all clk_wiz_0] ] }
+INFO: [Project 1-386] Moving file 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci'
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Tue Aug  4 18:17:37 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Tue Aug  4 18:17:37 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {74.250} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {52} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14} CONFIG.CLKOUT1_JITTER {242.898} CONFIG.CLKOUT1_PHASE_ERROR {300.278}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2025.891 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Tue Aug  4 23:14:04 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 00:17:56 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2034.762 ; gain = 3.523
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 00:22:11 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 00:22:11 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {78.250} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {43} CONFIG.MMCM_CLKOUT0_DIVIDE_F {11} CONFIG.CLKOUT1_JITTER {291.806} CONFIG.CLKOUT1_PHASE_ERROR {308.842}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2181.199 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 00:39:42 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 00:44:54 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 00:44:54 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+remove_files  -fileset utils_1 C:/VIVADO/name.tcl.tcl
+WARNING: [Project 1-965] File C:/VIVADO/name.tcl.tcl has been removed from project, but is still used as a hook script in run(s) impl_1.
+ Please use the command(s) "reset_property STEPS.WRITE_BITSTREAM.TCL.PRE [get_runs impl_1]" to remove it as a hook script.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 00:49:11 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {74.250} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {37.125} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.500} CONFIG.CLKOUT1_JITTER {245.495} CONFIG.CLKOUT1_PHASE_ERROR {245.344}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2207.434 ; gain = 2.551
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 01:27:08 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VIVADO/tmp_edit_project.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 01:27:52 2020] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 01:27:52 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {80.000} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.USE_LOCKED {true} CONFIG.USE_RESET {true} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {44} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {11} CONFIG.CLKOUT1_JITTER {285.756} CONFIG.CLKOUT1_PHASE_ERROR {307.118}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2228.816 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 01:32:50 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VIVADO/tmp_edit_project.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 01:33:20 2020] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 01:33:20 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {74.258} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {52} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14} CONFIG.CLKOUT1_JITTER {242.898} CONFIG.CLKOUT1_PHASE_ERROR {300.278}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2284.441 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 01:47:04 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VIVADO/tmp_edit_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 01:47:40 2020] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 01:47:41 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {6} CONFIG.MMCM_CLKFBOUT_MULT_F {62.375} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14.000} CONFIG.CLKOUT1_JITTER {270.162} CONFIG.CLKOUT1_PHASE_ERROR {408.086}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2300.297 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 09:50:41 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kClkRange {2}] [get_ips rgb2dvi_0]
+generate_target all [get_files  C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rgb2dvi_0'...
+catch { config_ip_cache -export [get_ips -all rgb2dvi_0] }
+export_ip_user_files -of_objects [get_files C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -sync -force -quiet
+reset_run rgb2dvi_0_synth_1
+launch_runs -jobs 4 rgb2dvi_0_synth_1
+[Wed Aug  5 10:06:17 2020] Launched rgb2dvi_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/rgb2dvi_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/VIVADO/tmp_edit_project.runs/synth_1
+
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 10:07:22 2020] Launched rgb2dvi_0_synth_1, synth_1...
+Run output will be captured here:
+rgb2dvi_0_synth_1: C:/VIVADO/tmp_edit_project.runs/rgb2dvi_0_synth_1/runme.log
+synth_1: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 10:07:23 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 10:14:19 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 10:14:20 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 10:16:55 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 10:16:55 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 10:20:36 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 10:53:39 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 10:53:39 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3152.129 ; gain = 0.000
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.125} CONFIG.MMCM_CLKOUT1_DIVIDE {9} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {146.489} CONFIG.CLKOUT1_PHASE_ERROR {105.461} CONFIG.CLKOUT2_JITTER {137.681} CONFIG.CLKOUT2_PHASE_ERROR {105.461}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 3152.129 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 11:06:12 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.CLKOUT2_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {6} CONFIG.MMCM_CLKFBOUT_MULT_F {62.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {14.000} CONFIG.MMCM_CLKOUT1_DIVIDE {1} CONFIG.NUM_OUT_CLKS {1} CONFIG.CLKOUT1_JITTER {270.162} CONFIG.CLKOUT1_PHASE_ERROR {408.086}] [get_ips clk_wiz_0]
+generate_target all [get_files  c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3152.129 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed Aug  5 11:08:34 2020] Launched clk_wiz_0_synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci] -directory C:/VIVADO/tmp_edit_project.ip_user_files/sim_scripts -ip_user_files_dir C:/VIVADO/tmp_edit_project.ip_user_files -ipstatic_source_dir C:/VIVADO/tmp_edit_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/VIVADO/tmp_edit_project.cache/compile_simlib/modelsim} {questa=C:/VIVADO/tmp_edit_project.cache/compile_simlib/questa} {riviera=C:/VIVADO/tmp_edit_project.cache/compile_simlib/riviera} {activehdl=C:/VIVADO/tmp_edit_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 13:37:18 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 13:37:18 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 13:44:35 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 13:44:35 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3152.129 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 13:46:11 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 13:46:11 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 13:49:28 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:11:59 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 14:11:59 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:14:57 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:31:01 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 14:31:01 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:33:50 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 14:33:50 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3160.180 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:36:52 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:53:47 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 14:53:47 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 14:57:03 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 14:57:03 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:04:01 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:04:01 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:15:19 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:15:19 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:26:24 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:26:24 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:31:42 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:31:42 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:41:05 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3161.691 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:48:18 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:48:18 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 15:56:02 2020] Launched synth_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/synth_1/runme.log
+[Wed Aug  5 15:56:02 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/VGA.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/cake_create.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/game_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/random.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake_control.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/VIVADO/src/snake.v:]
+[Wed Aug  5 16:04:24 2020] Launched impl_1...
+Run output will be captured here: C:/VIVADO/tmp_edit_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3163.207 ; gain = 0.262
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 3165.156 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 16:09:39 2020...

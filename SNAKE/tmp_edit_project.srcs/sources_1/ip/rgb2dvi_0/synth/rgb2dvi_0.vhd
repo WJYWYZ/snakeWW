@@ -59,7 +59,7 @@ ENTITY rgb2dvi_0 IS
     TMDS_Clk_n : OUT STD_LOGIC;
     TMDS_Data_p : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     TMDS_Data_n : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    aRst : IN STD_LOGIC;
+    aRst_n : IN STD_LOGIC;
     vid_pData : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
     vid_pVDE : IN STD_LOGIC;
     vid_pHSync : IN STD_LOGIC;
@@ -105,8 +105,8 @@ ARCHITECTURE rgb2dvi_0_arch OF rgb2dvi_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF vid_pHSync: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB HSYNC";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pVDE: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pData: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF aRst: SIGNAL IS "XIL_INTERFACENAME AsyncRst, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF aRst: SIGNAL IS "xilinx.com:signal:reset:1.0 AsyncRst RST";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF aRst_n: SIGNAL IS "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF aRst_n: SIGNAL IS "xilinx.com:signal:reset:1.0 AsyncRst_n RST";
   ATTRIBUTE X_INTERFACE_INFO OF TMDS_Data_n: SIGNAL IS "digilentinc.com:interface:tmds:1.0 TMDS DATA_N";
   ATTRIBUTE X_INTERFACE_INFO OF TMDS_Data_p: SIGNAL IS "digilentinc.com:interface:tmds:1.0 TMDS DATA_P";
   ATTRIBUTE X_INTERFACE_INFO OF TMDS_Clk_n: SIGNAL IS "digilentinc.com:interface:tmds:1.0 TMDS CLK_N";
@@ -117,16 +117,16 @@ BEGIN
     GENERIC MAP (
       kGenerateSerialClk => true,
       kClkPrimitive => "PLL",
-      kRstActiveHigh => true,
-      kClkRange => 1
+      kRstActiveHigh => false,
+      kClkRange => 2
     )
     PORT MAP (
       TMDS_Clk_p => TMDS_Clk_p,
       TMDS_Clk_n => TMDS_Clk_n,
       TMDS_Data_p => TMDS_Data_p,
       TMDS_Data_n => TMDS_Data_n,
-      aRst => aRst,
-      aRst_n => '1',
+      aRst => '0',
+      aRst_n => aRst_n,
       vid_pData => vid_pData,
       vid_pVDE => vid_pVDE,
       vid_pHSync => vid_pHSync,

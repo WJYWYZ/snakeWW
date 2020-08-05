@@ -1,14 +1,14 @@
-set_property SRC_FILE_INFO {cfile:c:/VIVADO/src/constraint.xdc rfile:../../../src/constraint.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/VIVADO/src/constraint.xdc rfile:../../../src/constraint.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H4 IOSTANDARD LVCMOS33 } [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN D14 IOSTANDARD LVCMOS33} [get_ports { rst_n }];
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN C3 IOSTANDARD LVCMOS33} [get_ports { k_up }];
+set_property -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports { k_up }];
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN M4 IOSTANDARD LVCMOS33} [get_ports { k_down }];
+set_property -dict {PACKAGE_PIN C3 IOSTANDARD LVCMOS33} [get_ports { k_down }];
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN M1 IOSTANDARD LVCMOS33} [get_ports { k_right }];
+set_property -dict {PACKAGE_PIN K3 IOSTANDARD LVCMOS33} [get_ports { k_right }];
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN M2 IOSTANDARD LVCMOS33} [get_ports { k_left }];
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
@@ -29,5 +29,3 @@ set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN C1   IOSTANDARD TMDS_33  } [get_ports { TMDS_Tx_Data_N[2] }]; #IO_L14N_T2_AD4N_SRCC_35 Sch=hdmi_tx_d_n[2]
 set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D1   IOSTANDARD TMDS_33  } [get_ports { TMDS_Tx_Data_P[2] }]; #IO_L14P_T2_AD4P_SRCC_35 Sch=hdmi_tx_d_p[2]
-set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
-set_property BITSTREAM CONFIG CONFIGRATE [current_design];

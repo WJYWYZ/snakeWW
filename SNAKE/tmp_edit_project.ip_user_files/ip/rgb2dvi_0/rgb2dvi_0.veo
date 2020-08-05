@@ -59,7 +59,7 @@ rgb2dvi_0 your_instance_name (
   .TMDS_Clk_n(TMDS_Clk_n),    // output wire TMDS_Clk_n
   .TMDS_Data_p(TMDS_Data_p),  // output wire [2 : 0] TMDS_Data_p
   .TMDS_Data_n(TMDS_Data_n),  // output wire [2 : 0] TMDS_Data_n
-  .aRst(aRst),                // input wire aRst
+  .aRst_n(aRst_n),            // input wire aRst_n
   .vid_pData(vid_pData),      // input wire [23 : 0] vid_pData
   .vid_pVDE(vid_pVDE),        // input wire vid_pVDE
   .vid_pHSync(vid_pHSync),    // input wire vid_pHSync

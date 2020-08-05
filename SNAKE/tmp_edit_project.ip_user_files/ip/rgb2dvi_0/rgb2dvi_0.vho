@@ -58,7 +58,7 @@ COMPONENT rgb2dvi_0
     TMDS_Clk_n : OUT STD_LOGIC;
     TMDS_Data_p : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     TMDS_Data_n : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    aRst : IN STD_LOGIC;
+    aRst_n : IN STD_LOGIC;
     vid_pData : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
     vid_pVDE : IN STD_LOGIC;
     vid_pHSync : IN STD_LOGIC;
@@ -78,7 +78,7 @@ your_instance_name : rgb2dvi_0
     TMDS_Clk_n => TMDS_Clk_n,
     TMDS_Data_p => TMDS_Data_p,
     TMDS_Data_n => TMDS_Data_n,
-    aRst => aRst,
+    aRst_n => aRst_n,
     vid_pData => vid_pData,
     vid_pVDE => vid_pVDE,
     vid_pHSync => vid_pHSync,

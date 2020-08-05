@@ -1,13 +1,14 @@
 `timescale 1 ns/ 1 ns
 module snake_control(clk,rst_n,k_up,k_down,k_right,k_left,x_pos,y_pos,apple_x,apple_y,apple_refresh,snake,
-                     dead_it,dead_wall);
+                     dead_it,dead_wall,game_status);
 input clk,rst_n,k_up,k_down,k_right,k_left;
-input [9:0] x_pos,y_pos,apple_x,apple_y;
-output reg apple_refresh;     // ç»™éšæœºäº§ç”Ÿè‹¹æœæ¨¡å—çš„æ¿€åŠ±
+input [11:0] x_pos,y_pos,apple_x,apple_y;
+input [1:0]game_status;
+output reg apple_refresh;     // ¸øËæ»ú²úÉúÆ»¹ûÄ£¿éµÄ¼¤Àø
 output dead_it,dead_wall;
 output snake;
 
-reg [1:0]dir;        //direction,è›‡å¤´æ–¹å‘å¯„å­˜å™¨
+reg [1:0]dir;        //direction,ÉßÍ··½Ïò¼Ä´æÆ÷
 parameter up=2'b00;
 parameter down=2'b01;
 parameter left=2'b10;
@@ -15,20 +16,20 @@ parameter right=2'b11;
 
 always@(posedge clk or negedge rst_n)
 begin
-     if(!rst_n) dir=up;
+     if(!rst_n) dir=left;
   else if(!k_left&&dir!=right) dir<=left;
   else if(!k_right&&dir!=left) dir<=right;
   else if(!k_up&&dir!=down) dir<=up;	           
-  else if(!k_down&&dir!=up) dir<=down;			 //è›‡å¤´ç§»åŠ¨	
+  else if(!k_down&&dir!=up) dir<=down;			 //ÉßÍ·ÒÆ¶¯	
 end
 
 //---------------------------------------------------------
-//è›‡ä½“å¯„å­˜å™¨ï¼Œè›‡ä½“åæ ‡å’Œå½“å‰ç§»åŠ¨æ–¹å‘  
-reg dead_it,dead_wall;//æ¸¸æˆç»“æŸ
-reg [9:0]snake_x[11:0];
-reg [9:0]snake_y[11:0];
-reg [31:0]count;    //è›‡èº«éšå¤´ç§»åŠ¨å‘¨æœŸè®¡æ—¶ï¼Œä¸€å‘¨æœŸä¸º0.5s=10ns*50000000
-parameter count_num=32'd10;  //32'd50000000;
+//ÉßÌå¼Ä´æÆ÷£¬ÉßÌå×ø±êºÍµ±Ç°ÒÆ¶¯·½Ïò  
+reg dead_it,dead_wall;//ÓÎÏ·½áÊø
+reg [11:0]snake_x[11:0];
+reg [11:0]snake_y[11:0];
+reg [31:0]count;    //ÉßÉíËæÍ·ÒÆ¶¯ÖÜÆÚ¼ÆÊ±£¬Ò»ÖÜÆÚÎª2s
+parameter count_num=32'd5000000;
 
 always@(posedge clk or negedge rst_n)
 begin 
@@ -43,32 +44,32 @@ begin
 end
 //-------------------------------------------------------------------------------------------------------------
 
-always@(posedge clk or negedge rst_n)  //è›‡å¤´ç§»åŠ¨ï¼Œä¾é åæ ‡è½´ä¸Šçš„åŠ ä¸€å‡ä¸€å®ç°,å±å¹•åˆ†è¾¨ç‡ä¸º640*480ï¼Œä¸€ä¸ªåƒç´ ä¸º10*10
+always@(posedge clk or negedge rst_n)  //ÉßÍ·ÒÆ¶¯£¬ÒÀ¿¿×ø±êÖáÉÏµÄ¼ÓÒ»¼õÒ»ÊµÏÖ,ÆÁÄ»·Ö±æÂÊÎª1280*720£¬Ò»¸öÏñËØÎª10*10
 begin
- if(!rst_n)
+ if(!rst_n||(game_status==2'b10))
   begin
-    snake_x[0]<=10'd400;
-	 snake_y[0]<=10'd262;
+    snake_x[0]<=12'd640;
+	 snake_y[0]<=12'd360;
 	end
  else if(count==count_num)
    case(dir)
-   right: begin  if(snake_x[0]==10'd800)
+   right: begin  if(snake_x[0]==12'd1280)
 	                 snake_x[0]<=10'd0;
 						 else 
 						   snake_x[0]=snake_x[0]+1'd1;
 			 end
-   left: begin  if(snake_x[0]==10'd0)
-	                 snake_x[0]<=10'd800;
+   left: begin  if(snake_x[0]==12'd0)
+	                 snake_x[0]<=12'd1280;
 						 else 
 						   snake_x[0]=snake_x[0]-1'b1;
 			 end
-   up: begin  if(snake_y[0]==10'd525)
-	                 snake_y[0]<=10'd0;
+   up: begin  if(snake_y[0]==12'd720)
+	                 snake_y[0]<=12'd0;
 						 else 
 						   snake_y[0]=snake_y[0]+1'd1;
 			 end			 
-   down: begin  if(snake_y[0]==10'd0)
-	                 snake_y[0]<=10'd525;
+   down: begin  if(snake_y[0]==12'd0)
+	                 snake_y[0]<=12'd720;
 						 else 
 						   snake_y[0]=snake_y[0]-1'd1;
 			 end	   
@@ -77,7 +78,7 @@ begin
 end
 
 //----------------------------------------------------------------------------
-always@(posedge clk or negedge rst_n)  //è›‡èº«éšç€ç§»åŠ¨
+always@(posedge clk or negedge rst_n)  //ÉßÉíËæ×ÅÒÆ¶¯
 begin
 if(!rst_n)
    begin 
@@ -136,25 +137,24 @@ if(!rst_n)
 	 end
 end
 //----------------------------------------------------------
-reg [3:0]lenth;
-always@(posedge clk or negedge rst_n)   //é•¿åº¦æ£€æµ‹
+reg [4:0]lenth;
+always@(posedge clk or negedge rst_n)   //³¤¶È¼ì²â
 begin
 if(!rst_n)
  begin 
-  lenth<=4'd1;
+  lenth<=5'd1;
   apple_refresh<=0;
   end
   else if((snake_x[0]==apple_x)&&(snake_y[0]==apple_y))
    begin
-    if(lenth<4'd12)
+    if(lenth<=5'd23)
 	  begin 
-	   lenth<=lenth+1'b1;
+	   lenth<=lenth+5'd2;
 		apple_refresh<=1'b1;
 	 end
-	else
+	else if(lenth>5'd23||game_status==2'b10)
 	begin
-	  lenth<=lenth;
-	  apple_refresh<=1'b1;
+	  lenth<=5'd1;
 	end
 	end
   else if(apple_refresh==1)
@@ -163,7 +163,8 @@ if(!rst_n)
     apple_refresh<=apple_refresh;
 end
 //----------------------------------------------------------------------------------
-always@(posedge clk or negedge rst_n)     //æ­»äº¡æ£€æµ‹
+parameter Red_Wall=32'd30;
+always@(posedge clk or negedge rst_n)     //ËÀÍö¼ì²â
 begin
  if(!rst_n)   begin dead_it<=0; dead_wall<=0; end
  else if((snake_x[0]==snake_x[1])&&(snake_y[0]==snake_y[1]))    dead_it<=1'b1;
@@ -177,20 +178,19 @@ begin
  else if((snake_x[0]==snake_x[9])&&(snake_y[0]==snake_y[9]))    dead_it<=1'b1;
  else if((snake_x[0]==snake_x[10])&&(snake_y[0]==snake_y[10]))  dead_it<=1'b1;
  else if((snake_x[0]==snake_x[11])&&(snake_y[0]==snake_y[11]))  dead_it<=1'b1;
- //else if(snake_x[0]<2'd1||snake_y<2'd2||snake_x[0]>10'd64||snake_y>10'd48) dead_wall<=1'b1;
+ else if((snake_x[0]==Red_Wall)||(snake_x[0]==12'd1280 - Red_Wall)||(snake_y[0] == Red_Wall)||(snake_y[0]==12'd720 - Red_Wall)) dead_wall<=1'b1;
  else   begin dead_it<=0; dead_wall<=0; end
 end
 
 //-------------------------------------------------------------------------------------------------------------------------
-//è›‡ä½“æ˜¾ç¤º
-assign snake=((x_pos==snake_x[0])&&(y_pos==snake_y[0]))||((x_pos==snake_x[1])&&(y_pos==snake_y[1])&&lenth>4'd1)
-            ||((x_pos==snake_x[2])&&(y_pos==snake_y[2])&&lenth>4'd2)||((x_pos==snake_x[3])&&(y_pos==snake_y[3])&&lenth>4'd3)
-				||((x_pos==snake_x[4])&&(y_pos==snake_y[4])&&lenth>4'd4)||((x_pos==snake_x[5])&&(y_pos==snake_y[5])&&lenth>4'd5)
-				||((x_pos==snake_x[6])&&(y_pos==snake_y[6])&&lenth>4'd6)||((x_pos==snake_x[7])&&(y_pos==snake_y[7])&&lenth>4'd7)
-				||((x_pos==snake_x[8])&&(y_pos==snake_y[8])&&lenth>4'd8)||((x_pos==snake_x[9])&&(y_pos==snake_y[9])&&lenth>4'd9)
-				||((x_pos==snake_x[10])&&(y_pos==snake_y[10])&&lenth>4'd10)||((x_pos==snake_x[11])&&(y_pos==snake_y[11])&&lenth>4'd11);
+//ÉßÌåÏÔÊ¾
+assign snake=(((x_pos>=snake_x[0]-12'd10)&&(x_pos<=snake_x[0]+12'd10))&&((y_pos>=snake_y[0]-12'd10)&&(y_pos<=snake_y[0]+12'd10)))||(((x_pos>=snake_x[1]-12'd10)&&(x_pos<=snake_x[1]+12'd10))&&((y_pos>=snake_y[1]-12'd10)&&(y_pos<=snake_y[1]+12'd10))&&lenth>5'd3)
+            ||(((x_pos>=snake_x[2]-12'd10)&&(x_pos<=snake_x[2]+12'd10))&&((y_pos>=snake_y[2]-12'd10)&&(y_pos<=snake_y[2]+12'd10))&&lenth>5'd5)||(((x_pos>=snake_x[3]-12'd10)&&(x_pos<=snake_x[3]+12'd10))&&((y_pos>=snake_y[3]-12'd10)&&(y_pos<=snake_y[3]+12'd10))&&lenth>5'd7)
+				||(((x_pos>=snake_x[4]-12'd10)&&(x_pos<=snake_x[4]+12'd10))&&((y_pos>=snake_y[4]-12'd10)&&(y_pos<=snake_y[4]+12'd10))&&lenth>5'd9)||(((x_pos>=snake_x[5]-12'd10)&&(x_pos<=snake_x[5]+12'd10))&&((y_pos>=snake_y[5]-12'd10)&&(y_pos<=snake_y[5]+12'd10))&&lenth>5'd11)
+				||(((x_pos>=snake_x[6]-12'd10)&&(x_pos<=snake_x[6]+12'd10))&&((y_pos>=snake_y[6]-12'd10)&&(y_pos<=snake_y[6]+12'd10))&&lenth>5'd13)||(((x_pos>=snake_x[7]-12'd10)&&(x_pos<=snake_x[7]+12'd10))&&((y_pos>=snake_y[7]-12'd10)&&(y_pos<=snake_y[7]+12'd10))&&lenth>5'd15)
+				||(((x_pos>=snake_x[8]-12'd10)&&(x_pos<=snake_x[8]+12'd10))&&((y_pos>=snake_y[8]-12'd10)&&(y_pos<=snake_y[8]+12'd10))&&lenth>5'd17)||(((x_pos>=snake_x[9]-12'd10)&&(x_pos<=snake_x[9]+12'd10))&&((y_pos>=snake_y[9]-12'd10)&&(y_pos<=snake_y[9]+12'd10))&&lenth>5'd19)
+				||(((x_pos>=snake_x[10]-12'd10)&&(x_pos<=snake_x[10]+12'd10))&&((y_pos>=snake_y[10]-12'd10)&&(y_pos<=snake_y[10]+12'd10))&&lenth>5'd21)||(((x_pos>=snake_x[11]-12'd10)&&(x_pos<=snake_x[11]+12'd10))&&((y_pos>=snake_y[11]-12'd10)&&(y_pos<=snake_y[11]+12'd10))&&lenth>5'd23);
 endmodule
 
 
  
-  

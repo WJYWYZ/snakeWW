@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -69,15 +68,21 @@ set rc [catch {
   create_project -in_memory -part xc7s15ftgb196-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir c:/vivado/tmp_edit_project.cache/wt [current_project]
-  set_property parent.project_path c:/vivado/tmp_edit_project.xpr [current_project]
-  set_property ip_repo_paths {{C:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP}} [current_project]
+  set_property webtalk.parent_dir C:/VIVADO/tmp_edit_project.cache/wt [current_project]
+  set_property parent.project_path C:/VIVADO/tmp_edit_project.xpr [current_project]
+  set_property ip_repo_paths {
+  {C:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP}
+  {C:/Users/47476/Documents/Tencent Files/474766209/FileRecv/SEA-master/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP}
+} [current_project]
   update_ip_catalog
-  set_property ip_output_repo c:/vivado/tmp_edit_project.cache/ip [current_project]
+  set_property ip_output_repo C:/VIVADO/tmp_edit_project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet c:/vivado/tmp_edit_project.runs/synth_1/snake.dcp
-  read_ip -quiet c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
-  read_xdc c:/VIVADO/src/constraint.xdc
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  add_files -quiet C:/VIVADO/tmp_edit_project.runs/synth_1/snake.dcp
+  read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/Driver_HDMI_0_3/Driver_HDMI_0.xci
+  read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci
+  read_ip -quiet C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+  read_xdc C:/VIVADO/src/constraint.xdc
   link_design -top snake -part xc7s15ftgb196-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -158,14 +163,15 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set src_rc [catch { 
-    puts "source c:/VIVADO/name.tcl.tcl"
-    source c:/VIVADO/name.tcl.tcl
+    puts "source C:/VIVADO/name.tcl.tcl"
+    source C:/VIVADO/name.tcl.tcl
   } _RESULT] 
   if {$src_rc} { 
     send_msg_id runtcl-1 error "$_RESULT"
-    send_msg_id runtcl-2 error "sourcing script c:/VIVADO/name.tcl.tcl failed"
+    send_msg_id runtcl-2 error "sourcing script C:/VIVADO/name.tcl.tcl failed"
     return -code error
   }
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force snake.mmi }
   write_bitstream -force snake.bit 
   catch {write_debug_probes -quiet -force snake}

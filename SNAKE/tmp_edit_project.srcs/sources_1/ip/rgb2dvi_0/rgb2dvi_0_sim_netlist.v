@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sun Aug  2 17:30:04 2020
+// Date        : Wed Aug  5 10:07:28 2020
 // Host        : LAPTOP-TEK82PBB running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/vivado/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.v
+//               C:/VIVADO/tmp_edit_project.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.v
 // Design      : rgb2dvi_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,7 +19,7 @@ module rgb2dvi_0
     TMDS_Clk_n,
     TMDS_Data_p,
     TMDS_Data_n,
-    aRst,
+    aRst_n,
     vid_pData,
     vid_pVDE,
     vid_pHSync,
@@ -29,7 +29,7 @@ module rgb2dvi_0
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N" *) output TMDS_Clk_n;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) output [2:0]TMDS_Data_p;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) output [2:0]TMDS_Data_n;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input aRst;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aRst_n;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB DATA" *) input [23:0]vid_pData;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB ACTIVE_VIDEO" *) input vid_pVDE;
   (* x_interface_info = "xilinx.com:interface:vid_io:1.0 RGB HSYNC" *) input vid_pHSync;
@@ -41,16 +41,16 @@ module rgb2dvi_0
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire TMDS_Clk_p;
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_n;
   (* IOSTANDARD = "TMDS_33" *) (* SLEW = "SLOW" *) wire [2:0]TMDS_Data_p;
-  wire aRst;
+  wire aRst_n;
   wire [23:0]vid_pData;
   wire vid_pHSync;
   wire vid_pVDE;
   wire vid_pVSync;
 
   (* kClkPrimitive = "PLL" *) 
-  (* kClkRange = "1" *) 
+  (* kClkRange = "2" *) 
   (* kGenerateSerialClk = "TRUE" *) 
-  (* kRstActiveHigh = "TRUE" *) 
+  (* kRstActiveHigh = "FALSE" *) 
   rgb2dvi_0_rgb2dvi U0
        (.PixelClk(PixelClk),
         .SerialClk(1'b0),
@@ -58,8 +58,8 @@ module rgb2dvi_0
         .TMDS_Clk_p(TMDS_Clk_p),
         .TMDS_Data_n(TMDS_Data_n),
         .TMDS_Data_p(TMDS_Data_p),
-        .aRst(aRst),
-        .aRst_n(1'b1),
+        .aRst(1'b0),
+        .aRst_n(aRst_n),
         .vid_pData(vid_pData),
         .vid_pHSync(vid_pHSync),
         .vid_pVDE(vid_pVDE),
@@ -71,20 +71,20 @@ module rgb2dvi_0_ClockGen
    (SerialClk,
     PixelClk,
     in0,
-    aRst,
-    \oSyncStages_reg[1] );
+    \oSyncStages_reg[1] ,
+    aRst_n);
   output SerialClk;
   output PixelClk;
   output in0;
-  input aRst;
   input \oSyncStages_reg[1] ;
+  input aRst_n;
 
   wire CLKFBIN;
   wire PixelClk;
   wire RST;
   wire SerialClk;
   wire aPixelClkLckd;
-  wire aRst;
+  wire aRst_n;
   wire in0;
   wire oOut;
   wire \oSyncStages_reg[1] ;
@@ -103,14 +103,14 @@ module rgb2dvi_0_ClockGen
   (* box_type = "PRIMITIVE" *) 
   PLLE2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT(10),
+    .CLKFBOUT_MULT(15),
     .CLKFBOUT_PHASE(0.000000),
-    .CLKIN1_PERIOD(6.250000),
+    .CLKIN1_PERIOD(12.500000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE(2),
+    .CLKOUT0_DIVIDE(3),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
-    .CLKOUT1_DIVIDE(10),
+    .CLKOUT1_DIVIDE(15),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT2_DIVIDE(1),
@@ -157,7 +157,7 @@ module rgb2dvi_0_ClockGen
         .RST(RST));
   rgb2dvi_0_ResetBridge_5 LockLostReset
        (.AS(pRst),
-        .aRst(aRst),
+        .aRst_n(aRst_n),
         .\oSyncStages_reg[1] (\oSyncStages_reg[1] ));
   rgb2dvi_0_SyncAsync__parameterized1 PLL_LockSyncAsync
        (.D(oOut),
@@ -165,7 +165,7 @@ module rgb2dvi_0_ClockGen
         .\oSyncStages_reg[1]_0 (\oSyncStages_reg[1] ));
   LUT1 #(
     .INIT(2'h1)) 
-    aRst_int_inferred_i_1
+    aRst_int_inferred_i_1__0
        (.I0(aPixelClkLckd),
         .O(in0));
   LUT3 #(
@@ -843,21 +843,26 @@ endmodule
 (* ORIG_REF_NAME = "ResetBridge" *) 
 module rgb2dvi_0_ResetBridge_5
    (AS,
-    aRst,
+    aRst_n,
     \oSyncStages_reg[1] );
   output [0:0]AS;
-  input aRst;
+  input aRst_n;
   input \oSyncStages_reg[1] ;
 
   wire [0:0]AS;
-  (* RTL_KEEP = "true" *) wire aRst_int;
+  (* RTL_KEEP = "true" *) wire aRst_int_0;
+  wire aRst_n;
   wire \oSyncStages_reg[1] ;
 
-  assign aRst_int = aRst;
   rgb2dvi_0_SyncAsync_6 SyncAsyncx
        (.AS(AS),
-        .\oSyncStages_reg[0]_0 (aRst_int),
+        .\oSyncStages_reg[0]_0 (aRst_int_0),
         .\oSyncStages_reg[1]_0 (\oSyncStages_reg[1] ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    aRst_int_inferred_i_1
+       (.I0(aRst_n),
+        .O(aRst_int_0));
 endmodule
 
 (* ORIG_REF_NAME = "SyncAsync" *) 
@@ -3893,8 +3898,8 @@ module rgb2dvi_0_TMDS_Encoder_3
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "rgb2dvi" *) (* kClkPrimitive = "PLL" *) (* kClkRange = "1" *) 
-(* kGenerateSerialClk = "TRUE" *) (* kRstActiveHigh = "TRUE" *) 
+(* ORIG_REF_NAME = "rgb2dvi" *) (* kClkPrimitive = "PLL" *) (* kClkRange = "2" *) 
+(* kGenerateSerialClk = "TRUE" *) (* kRstActiveHigh = "FALSE" *) 
 module rgb2dvi_0_rgb2dvi
    (TMDS_Clk_p,
     TMDS_Clk_n,
@@ -3928,8 +3933,8 @@ module rgb2dvi_0_rgb2dvi
   wire TMDS_Clk_p;
   wire [2:0]TMDS_Data_n;
   wire [2:0]TMDS_Data_p;
-  wire aRst;
   wire aRstLck;
+  wire aRst_n;
   wire [9:0]\pDataOutRaw[0] ;
   wire [9:0]\pDataOutRaw[1] ;
   wire [9:0]\pDataOutRaw[2] ;
@@ -3943,7 +3948,7 @@ module rgb2dvi_0_rgb2dvi
   rgb2dvi_0_ClockGen \ClockGenInternal.ClockGenX 
        (.PixelClk(PixelClkIO),
         .SerialClk(SerialClkIO),
-        .aRst(aRst),
+        .aRst_n(aRst_n),
         .in0(aRstLck),
         .\oSyncStages_reg[1] (PixelClk));
   rgb2dvi_0_OutputSERDES ClockSerializer
